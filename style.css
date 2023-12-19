@@ -1,0 +1,154 @@
+html{
+    font-family: sans-serif;
+}
+
+/*GENERICS*/
+body {
+    background-color: aliceblue;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*UTLITIES*/
+.color-gold {
+    color: #FF8F00;
+}
+
+.h-50px {
+    height: 50px;
+}
+
+.blue-link {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* utilities per i status badge  */
+.text-bg-done {
+    background-color: #198754;
+    font-weight: 400;
+}
+
+.text-bg-process {
+    background-color: #FFC107;
+    font-weight: 400;
+}
+
+.text-bg-failed {
+    background-color: #DC3545;
+    font-weight: 400;
+}
+
+/*HEADER BODY*/
+#header-body {
+    background-color: #F8F9FA;
+    padding: 20px 0;
+}
+
+.logo-img {
+    flex-basis: 15%;
+}
+
+.nav-icons {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    gap: 15px;
+}
+
+header .input-group-text,
+header .form-control {
+    border: 0;
+    background-color: #E5E5E5;
+    padding: 8px;
+}
+
+/*MAIN*/
+main {
+    height: calc(100vh - 90px);
+    display: flex;
+}
+
+/*LAVORO SULLA SIDEBAR*/
+#sidebar-main {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+    width: 80px;
+    flex-shrink: 0;
+}
+
+#sidebar-main a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+/*DIVIDO IL MAIN IN DUE: CONTENT-MAIN E HEADER-CONTENT*/
+#content-main {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+#header-content {
+    background-color: #1B72E8;
+}
+
+#header-content .badge {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: 200;
+    padding: 7px 5px;
+}
+
+/* .divisore::after {
+    font: var(--fa-font-solid);
+    content: '\f101';
+    font-size: 14px;
+} */
+thead th:not(:first-child) {
+    width: 110px;
+}
+
+tr th:not(:first-child),
+tr td:not(:first-child) {
+    text-align: center;
+}
+
+/* creo l'offcanvas */
+#header-content .offcanvas {
+    width: 100%;
+}
+
+form .form-check {
+    padding-left: calc(var(--bs-gutter-x) * 2);
+}
+
+form button {
+    margin-left: calc(var(--bs-gutter-x) * .5);
+}
+
+/* INTERACTIONS */
+
+#sidebar-main a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*MEDIA QUERY*/
+@media screen and (min-width: 992px) {
+    #sidebar-main {
+        width: 150px;
+    }
+
+    #header-content .offcanvas {
+        width: 50%;
+    }
+
+}
+
+span{
+    font-family: sans-serif;
+}
